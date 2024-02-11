@@ -185,6 +185,60 @@ for y in numbers:
     print('')
         
 
+
+
+
+#################################
+#Tuples
+#################################
+
+customers = (2, 1, 3)
+
+print(customers[0])
+
+
+#unpacking
+x, y, z = customers
+
+print(y)
+
+#################################
+#Dictionaries
+#################################
+
+customer = {
+    "name" : "John Smith",
+    "age": 30,
+    "is_verified": True
+
+}
+
+print(customer["age"])
+
+print(customer.get("birthday"))
+
+#print(customer["birthday"])
+
+customer["name"] = "Dani"
+
+print(customer["name"])
+
 """
+
+numbers = input("phone:")
+#numberslist = list(numbers)
+
+numberslist = [i for i in numbers]
+
+numbersdict = {
+    "1": "one",
+    "2": "two",
+    "3": "three"
+}
+
+
+for numberlist in numbersdict.keys():
+        print(numbersdict[numberlist])
+
 
 
