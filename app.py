@@ -223,7 +223,7 @@ customer["name"] = "Dani"
 
 print(customer["name"])
 
-"""
+
 
 numbers = input("phone:")
 #numberslist = list(numbers)
@@ -241,4 +241,16 @@ for numberlist in numbersdict.keys():
         print(numbersdict[numberlist])
 
 
+"""
 
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)" : "😊"
+
+}
+
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
