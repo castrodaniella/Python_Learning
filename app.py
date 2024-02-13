@@ -254,7 +254,7 @@ output = ""
 for word in words:
     output += emojis.get(word, word) + " "
 print(output)
-"""
+
 
 #################################
 #Functions
@@ -269,7 +269,7 @@ print(result)
 
 print(square(2))
 
-message = input(">")
+
 
 def emoji(message):
 
@@ -282,6 +282,20 @@ def emoji(message):
     output = ""
     for word in words:
         output += emojis.get(word, word) + " "
-    print(output)
+    return output
 
-emoji(message)
+message = input(">")
+print(emoji(message))
+
+"""
+
+#################################
+#Hangle errors
+#################################
+
+try:
+    age = int(input('age: '))
+    print(age)
+except ValueError:
+    print('Invalid Value')
+
