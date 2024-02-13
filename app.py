@@ -241,7 +241,7 @@ for numberlist in numbersdict.keys():
         print(numbersdict[numberlist])
 
 
-"""
+
 
 message = input(">")
 words = message.split(' ')
@@ -254,3 +254,34 @@ output = ""
 for word in words:
     output += emojis.get(word, word) + " "
 print(output)
+"""
+
+#################################
+#Functions
+#################################
+
+def square(number):
+    return number * number
+
+result = square(3)
+
+print(result)
+
+print(square(2))
+
+message = input(">")
+
+def emoji(message):
+
+    words = message.split(' ')
+    emojis = {
+        ":)" : "😊"
+
+    }
+
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    print(output)
+
+emoji(message)
