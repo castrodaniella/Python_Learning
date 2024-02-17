@@ -287,8 +287,8 @@ def emoji(message):
 message = input(">")
 print(emoji(message))
 
-"""
 
+"""
 #################################
 #Hangle errors
 #################################
@@ -298,4 +298,7 @@ try:
     print(age)
 except ValueError:
     print('Invalid Value')
+except ZeroDivisionError:
+    print('Age cannot be 0.')
+
 
