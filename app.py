@@ -303,10 +303,10 @@ except ZeroDivisionError:
     
 
 
-"""
+
 
 #################################
-#Classes
+#Classes and Constructors
 #################################
 
 class Point:
@@ -328,18 +328,54 @@ class Point:
 
 #point1.draw()
 
-#################################
-#Contrusctors
-#################################
 point = Point(10,20)
 print(point.x)
 
 class Person:
-    def name(self):
-        print("Daniela")
-    def talk(self):
-        print("Hello")
 
-person = Person()
-person.name()
+    def __init__(self, name):
+        self.name = name
+    
+    def talk(self):
+        print(f"Hello, I am {self.name}")
+
+person = Person("Daniela Castro")
 person.talk()
+
+
+bob = Person("Bob")
+bob.talk()
+
+
+#################################
+#Inheritance
+#################################
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+class Dog(Mammal):
+    def bark(self):
+        print("bark")
+
+
+class Cat(Mammal):
+    def miau(self):
+        print("MIauuu")
+
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
+
+cat1 = Cat()
+cat1.miau()
+
+"""
+#################################
+#Modules
+#################################
+
+
+    
+
