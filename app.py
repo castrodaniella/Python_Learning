@@ -57,6 +57,11 @@ print(math.floor(2.9))
 
 print(math.ceil(2.9))
 
+# // INTEGER DIVISION ROUND UP
+
+print(6 // 4) #EXPECTED 1.5
+print(6. // 4)
+
 
 #################################
 #Conditional Lessons
@@ -379,3 +384,21 @@ cat1.miau()
 
     
 
+import converters
+
+from converters import kg_to_lbs
+
+print(kg_to_lbs(100))
+
+print(converters.kg_to_lbs(70))
+
+
+import utils #option import 1
+
+from utils import find_max #option import 2
+
+
+
+print(utils.find_max()) #usage import 1
+
+print(find_max()) #usage import 2
